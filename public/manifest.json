@@ -1,0 +1,55 @@
+{
+  "name": "Fariza Arlistiana — Software Engineer Portfolio",
+  "short_name": "FRZ.DEV",
+  "description": "Portofolio resmi Fariza Arlistiana — Mahasiswa S1 Teknik Informatika Universitas Pamulang & Software Engineer",
+  "start_url": "/",
+  "id": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "window-controls-overlay"],
+  "background_color": "#050508",
+  "theme_color": "#E11D48",
+  "orientation": "any",
+  "scope": "/",
+  "lang": "id",
+  "dir": "ltr",
+  "categories": ["education", "developer", "portfolio", "productivity"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Jelajahi Proyek",
+      "short_name": "Proyek",
+      "description": "Jelajahi studi kasus proyek perangkat lunak Fariza Arlistiana",
+      "url": "/#proyek",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Sertifikat CCNA",
+      "short_name": "Sertifikat",
+      "description": "Kredensial resmi Cisco NetAcad & LPKKS UNPAM",
+      "url": "/#sertifikat",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Chat WhatsApp",
+      "short_name": "WhatsApp",
+      "description": "Chat langsung WhatsApp ke Fariza (+62 821-2196-5278)",
+      "url": "https://wa.me/6282121965278",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

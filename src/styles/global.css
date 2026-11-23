@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg-primary: #FFFFFF;
+    --color-bg-secondary: #FAFAFA;
+    --color-primary: #E11D48;
+    --color-accent: #F43F5E;
+    --color-text-main: #09090B;
+    --color-text-secondary: #52525B;
+    --color-border: #E4E4E7;
+  }
+
+  .dark {
+    --color-bg-primary: #050508;
+    --color-bg-secondary: #0B0B10;
+    --color-primary: #E11D48;
+    --color-accent: #FB7185;
+    --color-text-main: #FAFAFA;
+    --color-text-secondary: #A1A1AA;
+    --color-border: #1F1F28;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-main);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* 3D Perspective & Preservation */
+.perspective-800 { perspective: 800px; }
+.perspective-1000 { perspective: 1000px; }
+.perspective-1200 { perspective: 1200px; }
+.perspective-1500 { perspective: 1500px; }
+.preserve-3d { transform-style: preserve-3d; }
+.backface-hidden { backface-visibility: hidden; }
+
+/* Subtle Engineering Grid */
+.bg-tech-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(225, 29, 72, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(225, 29, 72, 0.05) 1px, transparent 1px);
+}
+
+.light .bg-tech-grid {
+  background-image: 
+    linear-gradient(to right, rgba(225, 29, 72, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(225, 29, 72, 0.04) 1px, transparent 1px);
+}
+
+/* Executive Red-Black Gradient Text */
+.text-gradient-crimson {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FDA4AF 40%, #E11D48 80%, #BE123C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.light .text-gradient-crimson {
+  background: linear-gradient(135deg, #09090B 0%, #BE123C 60%, #E11D48 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Refined Tactile Button */
+.btn-3d {
+  position: relative;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.btn-3d:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px 0 rgba(225, 29, 72, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.btn-3d:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* Clean Professional Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09090B;
+}
+
+.light ::-webkit-scrollbar-track {
+  background: #FAFAFA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #23232A;
+  border-radius: 4px;
+}
+
+.light ::-webkit-scrollbar-thumb {
+  background: #E4E4E7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E11D48;
+}
